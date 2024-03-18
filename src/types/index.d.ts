@@ -32,3 +32,14 @@ declare type SessionOata = {
     isSubscribed?: boolean;
 }
 
+declare type SearchParamProps = {
+    params: { id: string; feature: TransformationTypeKey };
+    searchParams: { [key: string]: string | string[] | undefined };
+};
+
+declare type TransformationTypeKey =
+  | "restore"
+  | "fill"
+  | "remove"
+  | "recolor"
+  | "removeBackground";

@@ -17,7 +17,6 @@ import {
 } from "next/font/google";
 import { cn } from "@/lib/utils";
 import MoboNavLinks from "./MoboNavLinks";
-import Link from "next/link";
 
 const inter = Comfortaa
     ({ subsets: ["latin"] });
@@ -39,14 +38,6 @@ export default async function MoboNavbar() {
                 <div className="w-full mt-5 flex flex-col gap-5">
                     <MoboNavLinks />
                 </div>
-                <SheetFooter>
-                    <SheetClose asChild>
-                        <div className="flex">
-
-                        </div>
-                    </SheetClose>
-                </SheetFooter>
-
             </SheetContent>
         </Sheet>
     )

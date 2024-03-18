@@ -10,6 +10,7 @@ import { SignInButton, SignOutButton, SignedIn, SignedOut } from '@clerk/nextjs'
 import { Switch } from '../ui/switch'
 import { Label } from '../ui/label'
 import { navLinks } from '@/constants'
+import { SheetClose } from '../ui/sheet'
 
 const MoboNavLinks = () => {
     return (
@@ -25,12 +26,14 @@ const MoboNavLinks = () => {
                 <AccordionContent>
                     <div className="w-full flex flex-col gap-4">
                         {navLinks.map((item, i) => {
-                            return <Link href={item.route} key={i} className='w-full'>
-                                <div className="flex flex-col">
-                                    <span className="text-sm font-medium leading-none">{item.label}</span>
-                                    <span className="line-clamp-2 text-sm leading-snug text-muted-foreground">{item.subTitle}</span>
-                                </div>
-                            </Link>
+                            return <SheetClose asChild key={i}>
+                                <Link href={item.route} className='w-full'>
+                                    <div className="flex flex-col">
+                                        <span className="text-sm font-medium leading-none">{item.label}</span>
+                                        <span className="line-clamp-2 text-sm leading-snug text-muted-foreground">{item.subTitle}</span>
+                                    </div>
+                                </Link>
+                            </SheetClose>
                         })}
                     </div>
                 </AccordionContent>
