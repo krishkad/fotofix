@@ -37,6 +37,7 @@
     "react-feather": "^2.0.10",
     "react-redux": "^9.1.0",
     "sonner": "^1.4.3",
+    "svix": "^1.21.0",
     "tailwind-merge": "^2.2.1",
     "tailwindcss-animate": "^1.0.7"
   },

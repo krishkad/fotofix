@@ -17,8 +17,8 @@ declare type CreateUserParams = {
 declare type UpdateUserParams = {
     firstname: string,
     lastname: string,
-    avatar: object,
-    role: {
+    avatar?: object,
+    role?: {
         ISADMIN?: boolean
     }
 };
