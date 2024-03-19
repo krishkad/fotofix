@@ -68,7 +68,7 @@ const MoboNavLinks = () => {
                     </span>
                 </AccordionItem>
             </SignedOut>
-            <AccordionItem value="item-7">
+            <AccordionItem value="item-8">
                 <span className='flex flex-1 items-center justify-between py-4 font-medium'>
                     <div className="flex items-center space-x-2">
                         <Switch id="dark-mode" />
