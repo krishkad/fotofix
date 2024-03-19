@@ -37,6 +37,10 @@ const userSchema = new Schema({
             type: Boolean,
             default: false
         }
+    },
+    theme: {
+        type: Boolean,
+        default: false
     }
 
 

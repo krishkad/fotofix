@@ -2,12 +2,13 @@
 
 // USER TYPES PARAMS
 declare type CreateUserParams = {
+    clerkId: string;
     firstname: string;
     lastname: string;
+    username: string;
     email: string;
-    password: string,
-    avatar: object,
-    role: {
+    avatar?: object,
+    role?: {
         ISADMIN?: boolean
     }
 }
@@ -38,8 +39,8 @@ declare type SearchParamProps = {
 };
 
 declare type TransformationTypeKey =
-  | "restore"
-  | "fill"
-  | "remove"
-  | "recolor"
-  | "removeBackground";
+    | "restore"
+    | "fill"
+    | "remove"
+    | "recolor"
+    | "removebackground";

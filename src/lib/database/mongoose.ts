@@ -21,7 +21,10 @@ export const ConnectToDatabase = async () => {
 
     if (!MONGODB_URL) throw new Error("MIssing MONGO_DB_URL");
 
-    catched.promise = catched.promise || mongoose.connect(MONGODB_URL, { dbName: "Fotofix", bufferCommands: false })
+    catched.promise = catched.promise || mongoose.connect(MONGODB_URL, {
+        dbName: "Fotofix",
+        bufferCommands: false
+    })
 
 
     catched.conn = await catched.promise;

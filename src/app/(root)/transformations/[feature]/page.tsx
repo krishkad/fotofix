@@ -1,7 +1,7 @@
 import React from 'react'
 import { transformationTypes } from '@/constants'
 
-const TransformationsPage = ({ params: { feature } }: SearchParamProps) => {
+const TransformationsPage = async ({ params: { feature } }: SearchParamProps) => {
 
     const transformation = transformationTypes[feature];
 
