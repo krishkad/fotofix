@@ -19,10 +19,11 @@ export default async function RootLayout({
 }>) {
 
 
+
   return (
     <ClerkProvider>
       <html lang="en">
-        <body className={cn(inter.className)}>
+        <body className={cn(inter.className , "")}>
           <main className="w-full">
             <main className="w-full">{children}</main>
             <Toaster />

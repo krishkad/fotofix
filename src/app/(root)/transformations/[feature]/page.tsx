@@ -1,5 +1,7 @@
 import React from 'react'
 import { transformationTypes } from '@/constants'
+import TransformationHeader from '@/components/layout/TransformationHeader';
+import TransformationForm from '@/components/layout/TransformationForm';
 
 const TransformationsPage = async ({ params: { feature } }: SearchParamProps) => {
 
@@ -7,11 +9,8 @@ const TransformationsPage = async ({ params: { feature } }: SearchParamProps) =>
 
     return (
         <div className='wrapper'>
-            <div>
-                <h1 className="text-2xl font-bold">{transformation.title}</h1>
-                <span className='text-sm font-semibold text-zinc-400'>{transformation.subTitle}</span>
-            </div>
-
+            <TransformationHeader transformation={transformation} />
+            <TransformationForm feature={feature} />
         </div>
     )
 }

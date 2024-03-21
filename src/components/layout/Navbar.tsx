@@ -33,7 +33,7 @@ const Navbar = async () => {
                     <div className="hidden max-md:flex gap-5">
                         <MoboNavbar />
                     </div>
-                   
+
                 </div>
             </div>
         </div>

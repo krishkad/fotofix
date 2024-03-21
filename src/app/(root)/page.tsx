@@ -1,5 +1,6 @@
-import HomePic from "@/components/Pictures/HomePic";
+// import HomePic from "@/components/Pictures/HomePic";
 import HomeBtn from "@/components/layout/Homebtn";
+import Image from "next/image";
 // import Image from "next/image";
 // import Link from "next/link";
 // import { Button } from "@/components/ui/button";
@@ -22,13 +23,12 @@ export default async function Home() {
               </Link>
               <Button variant={'secondary'}>View Plans</Button>
             </div> */}
-            <HomeBtn  />
+            <HomeBtn />
           </div>
           <div className="flex h-3/5 w-full">
             <div className="w-full h-full flex justify-center items-start md:items-center">
-              <div className="w-full md:h-full h-[80%] md:w-1/2 relative ">
-                {/* <Image src={'/homepicture6.svg'} priority={true} fill className="w-max h-max object-contain" alt="" /> */}
-                <HomePic />
+              <div className="w-full md:w-4/5 md:h-full h-[80%] relative ">
+                <Image src={"/s4.svg"} priority={true} fill className="w-max h-max object-cover" alt="" />
               </div>
             </div>
 
